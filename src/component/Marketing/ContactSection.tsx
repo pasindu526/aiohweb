@@ -250,7 +250,7 @@ const ContactSection: React.FC = () => {
       >
         <div className="lg:hidden block text-center justify-center">
           <h1 className="text-[26px] md:text-3xl lg:text-5xl lg:leading-[62px] font-bold">
-            Partner with us to build what’s{" "}
+            Partner with us to build <br /> what’s{" "}
             <span className="text-primary">next</span>
           </h1>
           <p className="lg:w-1/2 mt-4 text-sm lg:text-lg leading-6 md:leading-6 lg:leading-7 font-light text-center">
@@ -535,7 +535,7 @@ const ContactSection: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="text-[26px] md:text-3xl lg:text-5xl lg:leading-[62px] font-bold w-2/3 lg:w-full"
           >
-            Partner with us to build what’s{" "}
+            Partner with us to build <br /> what’s{" "}
             <span className="text-primary">next</span>
           </motion.h1>
           <motion.p
@@ -555,37 +555,48 @@ const ContactSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           viewport={{ once: true }}
-        className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full md:mt-6 ">
-          {/* Card 1 - Address */}
-
-          <div className="rounded-[20px] p-6 shadow-sm text-white bg-[linear-gradient(180deg,_#01213A_0%,_#035BA0_100%)]">
-            <p className="text-[18px] font-normal mb-1">Address :</p>
-            <p className="text-[16px] text-white leading-[24px] font-light">
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full"
+        >
+          {/* Address Card */}
+          <div className="bg-gradient-to-b from-[#01213A] from-0% to-[#035BA0] to-100% rounded-[20px] p-6 pr-2">
+            <p className="text-lg font-normal mb-1 text-white ">Address :</p>
+            <p className="text-base text-white leading-6 font-light">
               3rd Floor, All in one Holdings, <br />
               349/2/1 Katugastota Rd, <br />
               Kandy, Sri Lanka.
             </p>
           </div>
 
-          {/* Card 2 - Phone - Gradient */}
-          <div className="bg-transparent rounded-xl p-6">
-            <p className="text-[18px] font-normal mb-1">Phone :</p>
-            <p className="text-[16px] text-[#191818]leading-[32px] font-light">
-              +94 81 2121 051 <br />
-              +94 77 6722 709
-            </p>
+          <div className="flex flex-row sm:flex-col gap-2 sm:gap-0 px-4 py-6 sm:p-0">
+            {/* Phone - Card */}
+            <div className="flex-1 rounded-[20px] md:py-6 md:px-2 bg-white">
+              {/*shadow-sm lg:shadow-none*/}
+              <p className="text-lg font-normal text-start mb-1">Phone :</p>
+              <div className="flex flex-col text-sm md:text-base leading-6 font-light items-start">
+                <p>+94 81 2121 051</p>
+                {/* <p className="block sm:hidden text-lg font-serif">/</p> */}
+                <p>+94 76 8572 709</p>
+              </div>
+            </div>
+            {/* Email Card - mpbile */}
+            <div className="sm:hidden block flex-1 bg-white rounded-[20px] md:p-6">
+              <p className="text-lg font-normal mb-1">E-mail :</p>
+              <p className="text-sm md:text-base leading-6 font-light">
+                info@allinoneholdings.com
+              </p>
+            </div>
           </div>
 
-          {/* Card 3 - Email */}
-          <div className="bg-transparent rounded-xl p-6 ">
-            <p className="text-[18px] font-normal mb-1">E-mail :</p>
-            <p className="text-[16px] text-[#191818] leading-[24px] font-light">
+          {/* Email Card - tab & desktop*/}
+          <div className="hidden sm:block flex-1 bg-white rounded-[20px] p-2 md:p-6 md:pr-2 text-center md:text-start">
+            <p className="text-lg font-normal mb-1">E-mail :</p>
+            <p className="text-base  leading-6 font-light">
               info@allinoneholdings.com
             </p>
           </div>
 
           {/* Card 4 - Social Icons */}
-          <div className="rounded-xl p-6 flex flex-col items-center md:items-start justify-center gap-4">
+          <div className="rounded-xl py-6 px-2 flex flex-col items-center md:items-start justify-center gap-2">
             <p className="text-[18px] font-normal mb-1 text-center lg:text-left">
               Follow Us:
             </p>
