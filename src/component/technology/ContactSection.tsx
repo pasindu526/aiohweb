@@ -250,7 +250,7 @@ const ContactSection: React.FC = () => {
       >
         <div className="lg:hidden block text-center justify-center">
           <h1 className="text-[26px] md:text-3xl lg:text-5xl lg:leading-[62px] font-bold">
-            Partner with us to build what’s{" "}
+            Partner with us to build <br /> what’s{" "}
             <span className="text-primary">next</span>
           </h1>
           <p className="lg:w-1/2 mt-4 text-sm lg:text-lg leading-6 md:leading-6 lg:leading-7 font-light text-center">
@@ -535,7 +535,7 @@ const ContactSection: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="text-[26px] md:text-3xl lg:text-5xl lg:leading-[62px] font-bold w-2/3 lg:w-full"
           >
-            Partner with us to build what’s{" "}
+            Partner with us to build <br /> what’s{" "}
             <span className="text-primary">next</span>
           </motion.h1>
           <motion.p
@@ -558,7 +558,7 @@ const ContactSection: React.FC = () => {
           className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full"
         >
           {/* Address Card */}
-          <div className="bg-gradient-to-b from-[#01213A] from-0% to-[#035BA0] to-100% rounded-[20px] p-6">
+          <div className="bg-gradient-to-b from-[#01213A] from-0% to-[#035BA0] to-100% rounded-[20px] p-6 pr-2">
             <p className="text-lg font-normal mb-1 text-white ">Address :</p>
             <p className="text-base text-white leading-6 font-light">
               3rd Floor, All in one Holdings, <br />
@@ -569,7 +569,7 @@ const ContactSection: React.FC = () => {
 
           <div className="flex flex-row sm:flex-col gap-2 sm:gap-0 px-4 py-6 sm:p-0">
             {/* Phone - Card */}
-            <div className="flex-1 rounded-[20px] md:p-6 bg-white">
+            <div className="flex-1 rounded-[20px] md:py-6 md:px-2 bg-white">
               {/*shadow-sm lg:shadow-none*/}
               <p className="text-lg font-normal text-start mb-1">Phone :</p>
               <div className="flex flex-col text-sm md:text-base leading-6 font-light items-start">
@@ -588,7 +588,7 @@ const ContactSection: React.FC = () => {
           </div>
 
           {/* Email Card - tab & desktop*/}
-          <div className="hidden sm:block flex-1 bg-white rounded-[20px] p-2 md:p-6 text-center md:text-start">
+          <div className="hidden sm:block flex-1 bg-white rounded-[20px] p-2 md:p-6 md:pr-2 text-center md:text-start">
             <p className="text-lg font-normal mb-1">E-mail :</p>
             <p className="text-base  leading-6 font-light">
               info@allinoneholdings.com
@@ -596,7 +596,7 @@ const ContactSection: React.FC = () => {
           </div>
 
           {/* Card 4 - Social Icons */}
-          <div className="rounded-xl p-6 flex flex-col items-center md:items-start justify-center gap-4">
+          <div className="rounded-xl py-6 px-2 flex flex-col items-center md:items-start justify-center gap-2">
             <p className="text-[18px] font-normal mb-1 text-center lg:text-left">
               Follow Us:
             </p>
