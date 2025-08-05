@@ -36,10 +36,10 @@ const Footer = () => {
               <img
                 src={AIOHLogo}
                 alt="All in One Holdings Logo"
-                className="w-[140px] h-auto"
+                className="w-[200px] h-auto"
               />
             </div>
-            <p className="mb-2">
+            <p className="mb-2 text-[#F5F5F5]">
               Empowering startups and businesses with result-driven Digital
               Marketing and custom-built Software Solutions. Turn your ideas
               into digital succes
@@ -62,9 +62,9 @@ const Footer = () => {
           </div>
 
           {/* Column 2 */}
-          <div>
+          <div className="lg:ml-20">
             <h3 className="text-[18px] font-medium mb-3">What We Do Best</h3>
-            <ul className="space-y-1">
+            <ul className="space-y-2">
               <li>
                 <Link
                   to="/technology/WebService"
@@ -109,9 +109,9 @@ const Footer = () => {
           </div>
 
           {/* Column 3 */}
-          <div>
+          <div className="lg:ml-23">
             <h3 className="text-[18px] font-medium mb-3">Standout Services</h3>
-            <ul className="space-y-1">
+            <ul className="space-y-2 text-[#F5F5F5]">
               <li>
                 <Link
                   to="/technology/WebService"
@@ -156,15 +156,15 @@ const Footer = () => {
           </div>
 
           {/* Column 4 */}
-          <div>
+          <div className="lg:ml-20 ">
             <h3 className="text-[18px] font-medium mb-3">Contact</h3>
 
-            <div className="flex items-start gap-2 mb-1">
+            <div className="flex items-start gap-2 mb-2 text-[#F5F5F5]">
               <img src={PhoneIcon} alt="Phone" className="w-5 h-5 mt-1" />
               <p>+94 81 2121 051</p>
             </div>
 
-            <div className="flex items-start gap-2 mb-1">
+            <div className="flex items-start gap-2 mb-2">
               <img src={LocationIcon} alt="Location" className="w-5 h-5 mt-1" />
               <div>
                 <p>3rd Floor, All in one Holdings,</p>
@@ -184,26 +184,33 @@ const Footer = () => {
       {/* ✅ Footer Bottom Section with social + nav + credit */}
       <div className="relative z-10 w-full">
         <div className="w-11/12 mx-auto py-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          {/* Navigation Links */}
-          <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-            <Link to="/" className="hover:text-[#02EC97] transition">
-              Home
-            </Link>
-            <Link to="/Aboutus" className="hover:text-[#02EC97] transition">
-              About
-            </Link>
-            <Link to="/Marketing" className="hover:text-[#02EC97] transition">
-              Marketing
-            </Link>
-            <Link to="/Technology" className="hover:text-[#02EC97] transition">
-              Technology
-            </Link>
-            <Link to="/Design" className="hover:text-[#02EC97] transition">
-              Design
-            </Link>
-            <Link to="/Contact" className="hover:text-[#02EC97] transition">
-              Contact
-            </Link>
+          <div className="flex flex-col justify-center md:justify-start text-[#F5F5F5]">
+            <h3 className="text-[18px] font-medium mb-3 text-center md:text-left">
+              Navigations
+            </h3>
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+              <Link to="/" className="hover:text-[#02EC97] transition">
+                Home
+              </Link>
+              <Link to="/Aboutus" className="hover:text-[#02EC97] transition">
+                About
+              </Link>
+              <Link to="/Marketing" className="hover:text-[#02EC97] transition">
+                Marketing
+              </Link>
+              <Link
+                to="/Technology"
+                className="hover:text-[#02EC97] transition"
+              >
+                Technology
+              </Link>
+              <Link to="/Design" className="hover:text-[#02EC97] transition">
+                Design
+              </Link>
+              <Link to="/Contact" className="hover:text-[#02EC97] transition">
+                Contact
+              </Link>
+            </div>
           </div>
 
           {/* Social Icons */}
@@ -249,11 +256,11 @@ const Footer = () => {
 
         {/* ✅ Credit Line */}
         <div className="text-xs py-3 bg-[#000107]">
-          <div className="w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-2">
-            <p>
+          <div className="w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-2 text-[#F5F5F5]">
+            <p className="hover:text-[#02EC97] transition-colors duration-200">
               Copyrights © 2025 All in One IT Solutions. All Rights Reserved
             </p>
-            <p className="text-[10px]">
+            <p className="text-[10px] hover:text-[#02EC97] transition-colors duration-200 cursor-pointer">
               User Terms & Conditions | Privacy Policy
             </p>
           </div>
