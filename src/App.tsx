@@ -31,7 +31,7 @@ function App() {
         />
         <Route
           path="/marketing/social-media-advertising"
-          element={<WebService />}
+          element={<WebService />} 
         />
         <Route
           path="/marketing/brand-strategy-sample"
