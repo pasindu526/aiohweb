@@ -49,7 +49,7 @@ const locationCards: LocationCard[] = [
       "Our Sri Lankan hub is a blend of culture and tech innovation, fueling regional growth and talent development.",
     subLocations: [
       {
-        label: "Kandy Headquarters",
+        label: "Kandy",
         address:
           "3rd Floor, All in One Holdings Headquarters, 349/2/1 Katugastota Rd, Kandy 20800",
         phone: "0812121051",
@@ -134,11 +134,11 @@ const Locations: React.FC = () => {
         className="text-center mb-8"
       >
         <h2 className="text-[28px] md:text-[48px] lg:text-[52px] font-bold text-black">
-          Global Impact, Local Expertise
+          Expanding Excellence, Locally & Beyond
         </h2>
         <p className="text-[18px] font-light text-black mt-2">
-          Over the 10 years, we’ve proudly delivered successful projects for
-          clients across multiple countries
+          From local roots to international reach, our branches reflect our
+          commitment to serving clients wherever they are.
         </p>
       </motion.div>
 
@@ -157,13 +157,11 @@ const Locations: React.FC = () => {
             <h3 className="text-[36px] font-bold mb-4">
               {locationCards[0].title}
             </h3>
-            <p className="mt-2 md:text-[16px] text-[14px] leading-relaxed">
+            <p className="mt-2 md:text-[16px] text-[14px] leading-relaxed mb-2">
               {locationCards[0].description}
             </p>
-            <div className="mt-4 flex justify-between text-[12px] font-light">
-              <span className="text-left">{locationCards[0].address}</span>
-              <span className="font-bold">{locationCards[0].phone}</span>
-            </div>
+            <p>{locationCards[0].address}</p>
+            <p className="font-bold">{locationCards[0].phone}</p>
           </div>
         </div>
 
@@ -177,8 +175,14 @@ const Locations: React.FC = () => {
                 {locationCards[1].title}
               </h3>
               <p className="text-[14px] font-medium mb-2">
-                {locationCards[1].subLocations?.[0]?.label}
+                {locationCards[1].subLocations?.[0]?.label}{" "}
+                {locationCards[1].subLocations?.[0]?.address
+                  ?.toLowerCase()
+                  .includes("headquarters") && (
+                  <span className="text-[#02EC97]">(Headquarters)</span>
+                )}
               </p>
+
               <p className="text-[12px]">
                 {locationCards[1].subLocations?.[0]?.address}
               </p>
@@ -220,8 +224,12 @@ const Locations: React.FC = () => {
               <div className="flex justify-between mt-2 text-[12px] md:px-6 px-2 items-start gap-2">
                 <div className="w-1/2 text-left">
                   <p className="font-semibold text-[14px] mb-2">
-                    {locationCards[1].subLocations?.[0]?.label}
+                    {locationCards[1].subLocations?.[0]?.label}{" "}
+                    {locationCards[1].subLocations?.[0]?.address?.includes(
+                      "Headquarters"
+                    ) && <span className="text-[#02EC97]">(Headquarters)</span>}
                   </p>
+
                   <p>{locationCards[1].subLocations?.[0]?.address}</p>
                   <p className="font-bold">
                     {locationCards[1].subLocations?.[0]?.phone}
